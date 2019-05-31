@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+  - 2.5.5
+env:
+  global:
+    - RAILS_ENV=test
+script: bundle exec rspec
