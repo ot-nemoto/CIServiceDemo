@@ -3,7 +3,18 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.5.5
+        environment:
+          CC_TEST_REPORTER_ID: 'cef9e4130f8f4e4cc62444110810dda6cd03819f3b733ec6397066ce9b801ebe'
     steps:
       - checkout
+      # Download test-reporter
+      - run:
+          name: Setup Code Climate test-reporter
+          command: |
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
       - run: bundle install --path vendor/bundle
-      - run: bundle exec rspec
+      - run: |
+          ./cc-test-reporter before-build
+          bundle exec rspec
+          ./cc-test-reporter after-build --coverage-input-type simplecov --exit-code $?
