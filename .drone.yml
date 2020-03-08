@@ -1,0 +1,9 @@
+kind: pipeline
+name: default
+
+steps:
+- name: spec
+  image: ruby:2.5.5
+  commands:
+  - bundle install --path vendor/bundle
+  - bundle exec rspec
