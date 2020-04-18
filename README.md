@@ -4,19 +4,21 @@
 
 SAMのサンプルプロジェクトを、各CIサービスでビルドを試してみるためのリポジトリ
 
-## CI
+## Testing
 
-### Travis CI
+```sh
+bundle install --path vendor/bundle
+bundle exec rspec
+```
 
-<img src="https://cdn.worldvectorlogo.com/logos/travis-ci-icon.svg" width="50px"> [![Build Status](https://travis-ci.org/ot-nemoto/CIServiceDemo.svg?branch=master)](https://travis-ci.org/ot-nemoto/CIServiceDemo)
+## CI Services
 
-- [.travis.yml](.travis.yml)
+|CI Service| |Status badge|Config files|
+|--|--|--|--|
+|Travis CI|<img src="https://cdn.worldvectorlogo.com/logos/travis-ci-icon.svg" width="50px">|[![Build Status](https://travis-ci.org/ot-nemoto/CIServiceDemo.svg?branch=master)](https://travis-ci.org/ot-nemoto/CIServiceDemo)|[.travis.yml](.travis.yml)|
+|CircleCI|<img src="https://cdn.worldvectorlogo.com/logos/circleci.svg" width="50px">|[![Build Status](https://travis-ci.org/ot-nemoto/CIServiceDemo.svg?branch=master)](https://travis-ci.org/ot-nemoto/CIServiceDemo)|[.circleci/config.yml](.circleci/config.yml)|
 
-### CircleCI
 
-<img src="https://cdn.worldvectorlogo.com/logos/circleci.svg" width="50px"> [![CircleCI](https://circleci.com/gh/ot-nemoto/CIServiceDemo.svg?style=svg)](https://circleci.com/gh/ot-nemoto/CIServiceDemo)
-
-- [.circleci/config.yml](.circleci/config.yml)
 
 [![wercker status](https://app.wercker.com/status/872f8aca565bd05a7d21b55409af99a2/s/master "wercker status")](https://app.wercker.com/project/byKey/872f8aca565bd05a7d21b55409af99a2)
 [![Codeship Status for ot-nemoto/Rspec4SamDemo](https://app.codeship.com/projects/8f3edba0-428c-0138-130a-16d7bce19a00/status?branch=master)](https://app.codeship.com/projects/388162)
