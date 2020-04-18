@@ -1,14 +1,20 @@
 # CIServiceDemo
 
-## Travis CI
+## 概要
 
-<img src="https://cdn.worldvectorlogo.com/logos/travis-ci-icon.svg" width="50px"> [![Build Status](https://travis-ci.org/ot-nemoto/Rspec4SamDemo.svg?branch=master)](https://travis-ci.org/ot-nemoto/Rspec4SamDemo)
+SAMのサンプルプロジェクトを、各CIサービスでビルドを試してみるためのリポジトリ
+
+## CI
+
+### Travis CI
+
+<img src="https://cdn.worldvectorlogo.com/logos/travis-ci-icon.svg" width="50px"> [![Build Status](https://travis-ci.org/ot-nemoto/CIServiceDemo.svg?branch=master)](https://travis-ci.org/ot-nemoto/CIServiceDemo)
 
 - [.travis.yml](.travis.yml)
 
-## CircleCI
+### CircleCI
 
-<img src="https://cdn.worldvectorlogo.com/logos/circleci.svg" width="50px"> [![CircleCI](https://circleci.com/gh/ot-nemoto/Rspec4SamDemo.svg?style=shield)](https://circleci.com/gh/ot-nemoto/Rspec4SamDemo)
+<img src="https://cdn.worldvectorlogo.com/logos/circleci.svg" width="50px"> [![CircleCI](https://circleci.com/gh/ot-nemoto/CIServiceDemo.svg?style=svg)](https://circleci.com/gh/ot-nemoto/CIServiceDemo)
 
 - [.circleci/config.yml](.circleci/config.yml)
 
