@@ -4,7 +4,7 @@ jobs:
     docker:
       - image: circleci/ruby:2.5.5
         environment:
-          CC_TEST_REPORTER_ID: 'cef9e4130f8f4e4cc62444110810dda6cd03819f3b733ec6397066ce9b801ebe'
+          CC_TEST_REPORTER_ID: 'f9b0472297534abf2d3fcc2cb42d318b7af1df3954bed7cf5f98aa12391314e8'
     steps:
       - checkout
       # Download test-reporter
